@@ -5,6 +5,7 @@
     <title>banner</title>
     <script src="js/touch.js"></script>
     <script src="js/zepto.js"></script>
+    <script src="js/jquery.js"></script>
 </head>
 <style>
     .box{
@@ -44,12 +45,12 @@
     var num=0;
     var boxul=document.getElementsByTagName("div")[0];
     var width=boxul.offsetWidth;
-    /*$(".box-ul").mousedown(function(e){
+    $(".box-ul").mousedown(function(e){
         e.preventDefault();
     })
     $(".box-ul").mouseup(function(e){
         e.preventDefault();
-    })*/
+    })
     touch.on(".box","dragstart",".box-ul",function(e){
         $(".box-ul").css({
             transition:"null"
